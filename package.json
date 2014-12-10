@@ -1,0 +1,39 @@
+{
+  "name": "node-auth-tut",
+  "version": "1.0.0",
+  "description": "Tutorial for node authentication",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salehkaddoura/node-auth-tut.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Saleh Kaddoura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salehkaddoura/node-auth-tut/issues"
+  },
+  "homepage": "https://github.com/salehkaddoura/node-auth-tut",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.10.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.3",
+    "ejs": "^1.0.0",
+    "express": "^4.10.4",
+    "express-session": "^1.9.3",
+    "method-override": "^2.3.0",
+    "mongoose": "^3.8.20",
+    "morgan": "^1.5.0",
+    "passport": "^0.2.1",
+    "passport-facebook": "^1.0.3",
+    "passport-google-oauth": "^0.1.5",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.2"
+  }
+}
