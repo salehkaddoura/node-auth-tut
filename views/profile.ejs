@@ -4,36 +4,52 @@
     <title>Node Authentication</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <style>
-        body        { padding-top:80px; word-wrap:break-word; }
-    </style>
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-<div class="container">
-
-    <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-    </div>
-
-    <div class="row">
-
-        <!-- LOCAL INFORMATION -->
-        <div class="col-sm-6">
-            <div class="well">
-                <h3><span class="fa fa-user"></span> Local</h3>
-
-                    <p>
-                        <strong>id</strong>: <%= user._id %><br>
-                        <strong>username</strong>: <%= user.local.username %><br>
-                        <strong>password</strong>: <%= user.local.password %>
-                    </p>
-
+<div class="container-fluid container-wrap">
+    <div class="row row-fluid">
+        <div style="padding: 0" class="col-xs-2 chat-sidebar">
+            <div style="height: 100%; margin-bottom: 0;" class="well">
+                <div class="room-list-wrapper">
+                    <h5>CHANNELS</h5>
+                    <ul id="room-list">
+                        <li>Room 1</li>
+                        <li>Room 1</li>
+                        <li>Room 1</li>
+                    </ul>
+                </div>
+                <div class="user-list-wrapper">
+                    <h5>USERS</h5>
+                    <ul id="user-list">
+                        <li>User 1</li>
+                        <li>User 1</li>
+                        <li>User 1</li>
+                    </ul>
+                </div>
+                <a href="/logout" class="btn btn-default btn-sm">Logout</a>
             </div>
         </div>
-
+        <div class="col-xs-10 chat-window-wrap">
+            <div class="chat-window">
+            <p>Salmon Admin Panel</p>
+                <ul id="message-wrap">
+                    <li>mmesasge 1</li>
+                    <li>yo whats up</li>
+                    <li>fdsafdsa fjdsajf;dsjaf</li>
+                </ul>
+            </div>
+            <form id="send-message">
+                <div class="input-group">
+                    <input id="message" autocomplete="off" placeholder="Type here....">
+                </div>
+            </form>
+        </div>
     </div>
-
 </div>
+
 </body>
 </html>
+
+
+

@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.row-fluid {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-sidebar {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-window-wrap {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-window > p {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.chat-window {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.room-list-wrapper,
+.user-list-wrapper {
+    height: 40%;
+}
+
+.room-list-wrapper ul,
+.user-list-wrapper ul {
+    list-style: none;
+    padding: 0;
+}
+.room-list-wrapper li,
+.user-list-wrapper li {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.room-list-wrapper h5,
+.user-list-wrapper h5 {
+    color: rgba(127, 140, 141, 1.0);
+    font-size: 24px;
+}
+
+#message-wrap {
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+#message-wrap li {
+    margin-top: 3px;
+    font-family: Helvetica;
+    font-size: 12px;
+}
+
+#send-message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#send-message > div {
+    width: 100%;
+} 
+
+
+#message {
+    width: 100%;
+    height: 34px;
+}
